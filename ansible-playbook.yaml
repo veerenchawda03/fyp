@@ -19,5 +19,6 @@
         cd /home/ubuntu/fyp
         docker stop $(docker ps -a -q)
         docker rm $(docker ps -a -q)
+        sudo docker rmi -f $(docker images -aq)
         docker-compose up
       
