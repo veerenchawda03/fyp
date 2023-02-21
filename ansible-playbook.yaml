@@ -13,7 +13,7 @@
       shell: chmod +x /home/ubuntu/fyp/deploy-script.sh
         
     - name: test
-      shell: mkdir veeren
+      shell: mkdir veeren2
 
     - name: Execute shell script on target host
-      shell: /home/ubuntu/fyp/deploy-script.sh
+      shell: cd /home/ubuntu/fyp && ./deploy-script.sh
