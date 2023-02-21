@@ -1,5 +1,5 @@
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-docker rmi -f $(docker images -aq)
+sudo docker stop $(docker ps -a -q)
+sudo docker rm $(docker ps -a -q)
+sudo docker rmi -f $(docker images -aq)
 cd /home/ubuntu/fyp
-docker-compose up &
+sudo docker-compose up &
