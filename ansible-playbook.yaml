@@ -1,4 +1,4 @@
-- hosts: "{{ machine_ip }}
+- hosts: all
   gather_facts: yes
   become: yes
   tasks:
