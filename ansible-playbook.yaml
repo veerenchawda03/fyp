@@ -1,6 +1,6 @@
-  hosts: 13.235.69.98
+- hosts: "{{ machine_ip }}
+  gather_facts: yes
   become: yes
-
   tasks:
     - name: Copy shell script to target host
       copy:
