@@ -5,7 +5,7 @@
   tasks:
     - name: Copy shell script to target host
       copy:
-        src: ~/fyp/deploy-script.sh
+        src: /var/lib/jenkins/workspace/fyp/fyp/deploy-script.sh
         dest: /home/ubuntu/fyp/deploy-script.sh
         
 
