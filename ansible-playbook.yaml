@@ -1,0 +1,12 @@
+  hosts: 13.235.69.98
+  become: yes
+
+  tasks:
+    - name: Copy shell script to target host
+      copy:
+        src: /home/ubuntu/fyp/deploy-script.sh
+        dest: /home/ubuntu/fyp/deploy-script.sh
+        
+
+    - name: Execute shell script on target host
+      shell: /home/ubuntu/fyp/deploy-script.sh
