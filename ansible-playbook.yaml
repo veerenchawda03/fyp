@@ -14,4 +14,4 @@
         
 
     - name: Execute shell script on target host
-      shell: /home/ubuntu/fyp/deploy-script.sh
+      shell: ./home/ubuntu/fyp/deploy-script.sh
