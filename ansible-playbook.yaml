@@ -12,6 +12,8 @@
     - name: Make script executable
       shell: chmod +x /home/ubuntu/fyp/deploy-script.sh
         
+    - name: test
+      shell: mkdir veeren
 
     - name: Execute shell script on target host
       shell: /home/ubuntu/fyp/deploy-script.sh
