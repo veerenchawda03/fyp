@@ -1,4 +1,4 @@
-- hosts: "{{ target_ip }}"
+- hosts: all
   gather_facts: yes
   remote_user: ubuntu
   
