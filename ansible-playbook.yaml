@@ -5,7 +5,7 @@
   tasks:
     - name: Copy shell script to target host
       copy:
-        src: /home/ubuntu/fyp/deploy-script.sh
+        src: ~/fyp/deploy-script.sh
         dest: /home/ubuntu/fyp/deploy-script.sh
         
 
