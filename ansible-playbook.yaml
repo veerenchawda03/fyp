@@ -1,6 +1,4 @@
----
-- name: deploy 
-  hosts: "{{ target_ip }}"
+- hosts: "{{ target_ip }}"
   gather_facts: yes
   remote_user: ubuntu
   
