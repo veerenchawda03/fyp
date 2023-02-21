@@ -12,7 +12,7 @@ todos = db.todo #Select the collection
 
 app = Flask(__name__)
 title = "TODO with Flask"
-heading = "ToDo Reminder TESTING"
+heading = "ToDo Reminder Check 2"
 #modify=ObjectId()
 
 def redirect_url():
