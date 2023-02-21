@@ -13,7 +13,12 @@
       shell: chmod +x /home/ubuntu/fyp/deploy-script.sh
         
     - name: test
-      shell: mkdir veeren2
+      shell: mkdir veeren3
 
     - name: Execute shell script on target host
-      shell: cd /home/ubuntu/fyp && ./deploy-script.sh
+      shell: |
+      cd /home/ubuntu/fyp
+      docker stop $(docker ps -a -q)
+      docker rm $(docker ps -a -q)
+      docker-compose up
+      
