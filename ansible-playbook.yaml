@@ -17,10 +17,7 @@
     - name: Execute shell script on target host
       shell: |
         cd /home/ubuntu/fyp
-        mkdir rchdhere1
         docker stop $(docker ps -a -q)
-        mkdir rchdhere2
         docker rm $(docker ps -a -q)
-        mkdir rchdhere3
         docker-compose up
       
