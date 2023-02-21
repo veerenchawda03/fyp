@@ -8,6 +8,9 @@
       copy:
         src: /var/lib/jenkins/workspace/fyp/fyp/deploy-script.sh
         dest: /home/ubuntu/fyp/deploy-script.sh
+
+    - name: Make script executable
+      shell: chmod +x /home/ubuntu/fyp/deploy-script.sh
         
 
     - name: Execute shell script on target host
